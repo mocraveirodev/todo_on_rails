@@ -37,12 +37,10 @@ O sistema permite criar, visualizar, atualizar, excluir e listar tarefas. Cada t
 ## Funcionalidades
 
 - [x] **Criar Tarefas**: Ao criar, o status é definido como pendente por padrão, e as datas de criação e conclusão são gerenciadas automaticamente.
-- [x] **Listar Tarefas**: Todas as tarefas são listadas em uma página de visualização geral.
+- [x] **Listar Tarefas**: Todas as tarefas não excluídas são listadas em uma página de visualização geral.
 - [x] **Visualizar Detalhes de Tarefas**: Exibe os detalhes de uma tarefa específica, incluindo o status e datas.
 - [x] **Atualizar Tarefas**: Permite alterar qualquer campo de uma tarefa. Se o status for marcado como concluído, a data de conclusão é definida automaticamente.
 - [x] **Excluir Tarefas**: Em vez de remover do banco de dados, a data de exclusão é registrada e a tarefa é marcada como excluída, não sendo mais exibida na lista.
-- [x] **Paginação**: A página de listagem de tarefas é paginada para facilitar a navegação.
-- [x] **Localização**: O sistema suporta múltiplos idiomas, e o idioma é definido pela URL (ex: `/?locale=pt`).
 
 ## 🔁 Como Rodar a Aplicação
 
@@ -92,6 +90,7 @@ O sistema permite criar, visualizar, atualizar, excluir e listar tarefas. Cada t
 
 ## 💡 Pontos de Melhoria
 - Internacionalização
+- Paginação
 - Autenticação: Adicionar autenticação de usuários, permitindo que cada usuário gerencie suas próprias tarefas.
 - Filtro de Tarefas: Implementar filtros de tarefas por status (pendente/concluído), datas (criadas, concluídas ou excluídas) e titulo (inteiro ou parcial).
 - Incluir status "em progresso".
