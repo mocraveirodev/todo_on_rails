@@ -5,6 +5,7 @@ class Task < ApplicationRecord
   before_save :set_completed_at
 
   validates :title, presence: true
+  validates :description, length: { maximum: 500, message: "Não é permitido mais de 500 caracteres." }, allow_nil: true
 
   private
 

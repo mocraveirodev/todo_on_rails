@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_10_21_013945) do
+ActiveRecord::Schema.define(version: 2024_10_21_015800) do
 
 # Could not dump table "tasks" because of following StandardError
-#   Unknown type 'uuid' for column 'id'
+#   Unknown type '' for column 'id'
 
 end
