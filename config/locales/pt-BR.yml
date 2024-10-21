@@ -2,6 +2,7 @@ pt-BR:
   title:
     index: "Lista de Tarefas"
     new_task: "Nova Tarefa"
+    show_task: "Detalhes da Tarefa"
   time:
     formats:
       default: "%d/%m/%Y %H:%M"

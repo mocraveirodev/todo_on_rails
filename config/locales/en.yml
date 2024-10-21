@@ -34,6 +34,7 @@ en:
   title:
     index: "Task List"
     new_task: "New Task"
+    show_task: "Task Details"
   time:
     formats:
       default: "%m/%d/%Y %H:%M"
