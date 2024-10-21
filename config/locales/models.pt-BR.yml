@@ -1,11 +1,11 @@
 pt-BR:
   activerecord:
     models:
-      tasks:
+      task:
         one: Tarefa
         other: Tarefas
     attributes:
-      tasks:
+      task:
         id: "Identificador"
         title: "Título"
         description: "Descricão"

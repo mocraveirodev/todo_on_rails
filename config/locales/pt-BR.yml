@@ -1,7 +1,16 @@
 pt-BR:
+  title:
+    index: "Lista de Tarefas"
   time:
     formats:
       default: "%d/%m/%Y %H:%M"
   messages:
-    confirm: "Tem certeza?"
+    delete: "Tem certeza que deseja excluir essa tarefa?"
+    status:
+      pending: "Pendente"
+      completed: "Concluído"
+  buttons:
+    create: "Criar nova tarefa"
+    update: "Editar"
+    delete: "Excluir"
   

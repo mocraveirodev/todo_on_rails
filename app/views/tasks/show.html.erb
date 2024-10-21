@@ -36,5 +36,5 @@
 </p>
 
 <%= link_to 'Edit', edit_task_path(@task) %> |
-<%= link_to 'Excluir', task_path(@task), method: :delete, data: { confirm: t('messages.confirm') } %> |
+<%= link_to 'Excluir', task_path(@task), method: :delete, data: { confirm: t('messages.delete') } %> |
 <%= link_to 'Back', tasks_path %>

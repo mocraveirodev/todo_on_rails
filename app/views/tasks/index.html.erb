@@ -1,19 +1,21 @@
+<% content_for :title, t('title.index') %>
+
 <p id="notice"><%= notice %></p>
 
-<h1 class="text-danger">TODO List</h1>
+<h1 class="text-danger"><%= t('title.index') %></h1>
 
-<%= link_to 'New Task', new_task_path, class:"btn btn-primary btn-lg mt-3 mb-3" %>
+<%= link_to t('buttons.create'), new_task_path, class:"btn btn-primary btn-lg mt-3 mb-3" %>
 
 <table class="table table-hover table-striped table-bordered table-responsive">
   <thead class="table-dark">
     <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Status</th>
-      <th>Created at</th>
-      <th>Updated at</th>
-      <th>Completed at</th>
-      <th>Deleted at</th>
+      <th><%= @tasks.human_attribute_name(:title) %></th>
+      <th><%= @tasks.human_attribute_name(:description) %></th>
+      <th><%= @tasks.human_attribute_name(:status) %></th>
+      <th><%= @tasks.human_attribute_name(:created_at) %></th>
+      <th><%= @tasks.human_attribute_name(:updated_at) %></th>
+      <th><%= @tasks.human_attribute_name(:completed_at) %></th>
+      <th><%= @tasks.human_attribute_name(:deleted_at) %></th>
       <th colspan="2"></th>
     </tr>
   </thead>
@@ -23,13 +25,13 @@
       <tr>
         <td><%= link_to task.title, task %></td>
         <td><%= task.description %></td>
-        <td><%= task.status ? 'Concluída' : 'Pendente' %></td>
+        <td><%= task.status ? t('messages.status.completed') : t('messages.status.pending') %></td>
         <td><%= l(task.created_at) %></td>
         <td><%= l(task.updated_at) %></td>
         <td><%= task.completed_at ? l(task.completed_at) : '' %></td>
         <td><%= task.deleted_at ? l(task.deleted_at) : '' %></td>
-        <td><%= link_to 'Edit', edit_task_path(task) %></td>
-        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: t('messages.confirm') } %></td>
+        <td><%= link_to t('buttons.update'), edit_task_path(task) %></td>
+        <td><%= link_to t('buttons.delete'), task, method: :delete, data: { confirm: t('messages.delete') } %></td>
       </tr>
     <% end %>
   </tbody>

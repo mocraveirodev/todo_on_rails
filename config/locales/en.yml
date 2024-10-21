@@ -31,8 +31,17 @@
 
 en:
   hello: "Hello world"
+  title:
+    index: "Task List"
   time:
     formats:
       default: "%m/%d/%Y %H:%M"
   messages:
-    confirm: "Are you sure?"
+    delete: "Are you sure you want to delete this task?"
+    status:
+      pending: "Pending"
+      completed: "Completed"
+  buttons:
+    create: "Create New Task"
+    update: "Edit Task"
+    delete: "Delete Task"
