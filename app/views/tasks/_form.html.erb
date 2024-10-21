@@ -21,7 +21,17 @@
     <%= form.text_area :description %>
   </div>
 
+  <div>
+    <%= form.label :status %>
+    <% if @task.new_record? %>
+      <%= form.check_box :status, disabled: true %>
+    <% else %>
+      <%= form.check_box :status %>
+    <% end %>
+    Concluída
+  </div>
+
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit @task.new_record? ? 'Criar Tarefa' : 'Atualizar Tarefa' %>
   </div>
 <% end %>
