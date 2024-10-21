@@ -35,6 +35,7 @@ en:
     index: "Task List"
     new_task: "New Task"
     show_task: "Task Details"
+    update_task: "Update Task"
   time:
     formats:
       default: "%m/%d/%Y %H:%M"
