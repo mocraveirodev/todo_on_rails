@@ -29,5 +29,8 @@ module TodoOnRails
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Config UUID 
+    config.active_record.primary_key = :uuid
   end
 end

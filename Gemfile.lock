@@ -99,6 +99,8 @@ GEM
     nio4r (2.7.3)
     nokogiri (1.15.6-x86_64-linux)
       racc (~> 1.4)
+    paranoia (2.6.4)
+      activerecord (>= 5.1, < 7.2)
     puma (3.12.6)
     racc (1.8.1)
     rack (2.2.10)
@@ -189,6 +191,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  paranoia
   puma (~> 3.11)
   rails (~> 5.2.8, >= 5.2.8.1)
   sass-rails (~> 5.0)
