@@ -29,5 +29,10 @@ module TodoOnRails
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Config UUID 
+    config.active_record.primary_key = :uuid
+    config.active_record.default_timezone = :local
+    config.time_zone = 'America/Sao_Paulo'
   end
 end
