@@ -28,10 +28,10 @@
     <% else %>
       <%= form.check_box :status %>
     <% end %>
-    Concluída
+    Concluído
   </div>
 
   <div class="actions">
-    <%= form.submit @task.new_record? ? 'Criar Tarefa' : 'Atualizar Tarefa', class:"btn btn-primary mt-5" %>
+    <%= form.submit @task.new_record? ? t('buttons.create') : t('buttons.update'), class:"btn btn-primary btn-lg mt-5" %>
   </div>
 <% end %>

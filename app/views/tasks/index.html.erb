@@ -4,7 +4,7 @@
 
 <h1 class="text-danger"><%= t('title.index') %></h1>
 
-<%= link_to t('buttons.create'), new_task_path, class:"btn btn-primary btn-lg mt-3 mb-3" %>
+<%= link_to t('buttons.new_task'), new_task_path, class:"btn btn-primary btn-lg mt-3 mb-3" %>
 
 <table class="table table-hover table-striped table-bordered table-responsive">
   <thead class="table-dark">
@@ -30,8 +30,8 @@
         <td><%= l(task.updated_at) %></td>
         <td><%= task.completed_at ? l(task.completed_at) : '' %></td>
         <td><%= task.deleted_at ? l(task.deleted_at) : '' %></td>
-        <td><%= link_to t('buttons.update'), edit_task_path(task) %></td>
-        <td><%= link_to t('buttons.delete'), task, method: :delete, data: { confirm: t('messages.delete') } %></td>
+        <td><%= link_to t('buttons.update_task'), edit_task_path(task) %></td>
+        <td><%= link_to t('buttons.delete_task'), task, method: :delete, data: { confirm: t('messages.delete') } %></td>
       </tr>
     <% end %>
   </tbody>

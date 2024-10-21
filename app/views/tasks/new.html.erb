@@ -1,5 +1,7 @@
-<h1 class="text-danger">New Task</h1>
+<% content_for :title, t('title.new_task') %>
+
+<h1 class="text-danger"><%= t('messages.new_task') %></h1>
 
 <%= render 'form', task: @task %>
 
-<%= link_to 'Back', tasks_path, class:"btn btn-secondary btn-lg" %>
+<%= link_to t('buttons.back'), tasks_path, class:"btn btn-secondary btn-lg" %>

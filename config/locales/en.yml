@@ -33,15 +33,20 @@ en:
   hello: "Hello world"
   title:
     index: "Task List"
+    new_task: "New Task"
   time:
     formats:
       default: "%m/%d/%Y %H:%M"
   messages:
+    new_task: "New Task"
     delete: "Are you sure you want to delete this task?"
     status:
       pending: "Pending"
       completed: "Completed"
   buttons:
-    create: "Create New Task"
-    update: "Edit Task"
-    delete: "Delete Task"
+    new_task: "Create New Task"
+    update_task: "Edit"
+    delete_task: "Delete"
+    create: "Create Task"
+    update: "Update Task"
+    back: "Back"
