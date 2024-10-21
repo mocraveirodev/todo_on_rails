@@ -1,7 +1,10 @@
 class Task < ApplicationRecord
   acts_as_paranoid
+
   before_create :generate_uuid
   before_save :set_completed_at
+
+  validates :title, presence: true
 
   private
 
