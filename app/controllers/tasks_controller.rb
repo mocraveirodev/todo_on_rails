@@ -3,7 +3,7 @@ class TasksController < ApplicationController
 
   # GET /tasks or /tasks.json
   def index
-    @tasks = Task.all.order(created_at: :asc)
+    @tasks = Task.without_deleted.order(created_at: :asc)
   end
 
   # GET /tasks/1 or /tasks/1.json
