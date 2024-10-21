@@ -1,5 +1,9 @@
 {
   "name": "todo_on_rails",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "4.6.2",
+    "jquery": "3.5.1",
+    "popper.js": "1.16.1"
+  }
 }
