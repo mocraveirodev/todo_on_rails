@@ -47,7 +47,7 @@ O sistema permite criar, visualizar, atualizar, excluir e listar tarefas. Cada t
 1. **Pré-requisitos**:
    - [Ruby](https://www.ruby-lang.org/en/) (2.7.7)
    - [Rails](https://rubyonrails.org/) (5.2.1)
-   - [NPM](hhttps://www.npmjs.com/) ou [YARN](https://yarnpkg.com/)
+   - [NPM](https://www.npmjs.com/) ou [YARN](https://yarnpkg.com/)
 
 2. **Clone o repositório**:
    ```bash
