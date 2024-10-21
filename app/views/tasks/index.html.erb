@@ -2,8 +2,8 @@
 
 <h1 class="text-danger">Tasks</h1>
 
-<table>
-  <thead>
+<table class="table table-hover table-striped table-bordered table-responsive">
+  <thead class="table-dark">
     <tr>
       <th>Title</th>
       <th>Description</th>
@@ -16,7 +16,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody class="table-group-divider">
     <% @tasks.each do |task| %>
       <tr>
         <td><%= link_to task.title, task %></td>
@@ -27,7 +27,7 @@
         <td><%= task.completed_at %></td>
         <td><%= task.deleted_at %></td>
         <td><%= link_to 'Edit', edit_task_path(task) %></td>
-        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: t('messages.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>

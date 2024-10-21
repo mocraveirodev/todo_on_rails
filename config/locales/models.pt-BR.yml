@@ -1,0 +1,16 @@
+pt-BR:
+  activerecord:
+    models:
+      tasks:
+        one: Tarefa
+        other: Tarefas
+    attributes:
+      tasks:
+        id: "Identificador"
+        title: "Título"
+        description: "Descricão"
+        status: "Status"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+        completed_at: "Concluído em"
+        deleted_at: "Excluído em"

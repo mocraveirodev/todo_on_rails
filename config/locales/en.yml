@@ -31,3 +31,5 @@
 
 en:
   hello: "Hello world"
+  messages:
+    confirm: "Are you sure?"
