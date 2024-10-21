@@ -11,14 +11,14 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :description %>
-    <%= form.text_area :description, maxlength: 500 %>
+    <%= form.text_area :description, maxlength: 500, class:"form-control" %>
   </div>
 
   <div>
@@ -32,6 +32,6 @@
   </div>
 
   <div class="actions">
-    <%= form.submit @task.new_record? ? 'Criar Tarefa' : 'Atualizar Tarefa' %>
+    <%= form.submit @task.new_record? ? 'Criar Tarefa' : 'Atualizar Tarefa', class:"btn btn-primary mt-5" %>
   </div>
 <% end %>

@@ -31,5 +31,8 @@
 
 en:
   hello: "Hello world"
+  time:
+    formats:
+      default: "%m/%d/%Y %H:%M"
   messages:
     confirm: "Are you sure?"
